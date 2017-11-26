@@ -1,0 +1,28 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{savetrees}
+\usepackage{tikz}
+
+\title{W3OP: Web Optimized Processor}
+\author{Rasmus}
+
+\begin{document}
+\maketitle
+
+The W3OP processor is a world wide web optimized soft core processor, that execute the High 5 (HI5) instruction set compiled from JavaScript.
+
+The architecture is centered around a 36-bit instruction set fed by fast dedicated SRAM. The processor itself has a matrix like registry file of 16 rows by 16 columns of 8-byte cells allowing for experimentation both with different processor architectures and (distributed) operating system paradigms.
+
+\section{Instruction Set}
+The instruction is 36 bits or 4.5 bytes or 5 {\it nibbles}.
+
+\begin{tikzpicture}
+	\draw[step=1cm,gray,thin] (0,0) grid (5,1);
+	\node at (0.5,0.75) {4-bit};
+	\node at (0.5,0.5) {op};
+	\node at (0.5,0.25) {code};
+\end{tikzpicture}
+
+The figure above shows a 32-bit immediate being possible with by using the 5th nibble as the opcode. For example it is possible to use.
+\end{document}
+
+W3OP is created with the EagleCAD PCB program. There are mechanic spring contacts that allows a for direct contact with the cobber.
